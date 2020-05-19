@@ -1,0 +1,20 @@
+1. Install gcc-4.9.2 from source (please refer to https://gcc.gnu.org/install/)
+
+2. Extract z3.zip, and install z3 static library.
+Details:
+ $ cd path_to_the_folder_z3
+ $ sudo apt-get install autoconf sed dos2unix
+ $ autoconf 
+ $ ./configure 
+ $ make
+ $ make a
+
+3. Extract S3.zip, and install S3. 
+Please make sure that the folder S3 is in the same level as the folder z3.
+Details:
+ $ cd path_to_the_folder_S3
+ $ make
+
+4. Run S3 binary via the script file:
+Details:
+  $ ./run.py -f test/replaceAll/1.2.test 
